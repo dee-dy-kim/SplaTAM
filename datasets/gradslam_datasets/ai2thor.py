@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Union
 
 import cv2
-import imageio.v2 as imageio
+import imageio as imageio
 import numpy as np
 import torch
 import torch.nn.functional as F

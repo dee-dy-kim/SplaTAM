@@ -19,7 +19,7 @@ group_name = "Replica"
 run_name = f"{scene_name}_{seed}"
 
 config = dict(
-    workdir=f"./experiments/{group_name}",
+    workdir=f"./SplaTAM/experiments/{group_name}",
     run_name=run_name,
     seed=seed,
     primary_device=primary_device,
@@ -46,8 +46,8 @@ config = dict(
         eval_save_qual=True,
     ),
     data=dict(
-        basedir="./data/Replica",
-        gradslam_data_cfg="./configs/data/replica.yaml",
+        basedir="./SplaTAM/data/Replica",
+        gradslam_data_cfg="./SplaTAM/configs/data/replica.yaml",
         sequence=scene_name,
         desired_image_height=680,
         desired_image_width=1200,
@@ -126,7 +126,7 @@ config = dict(
         render_mode='color', # ['color', 'depth' or 'centers']
         offset_first_viz_cam=True, # Offsets the view camera back by 0.5 units along the view direction (For Final Recon Viz)
         show_sil=False, # Show Silhouette instead of RGB
-        visualize_cams=True, # Visualize Camera Frustums and Trajectory
+        visualize_cams=True, # Visualize Camera Frustums and Trajectory3
         viz_w=600, viz_h=340,
         viz_near=0.01, viz_far=100.0,
         view_scale=2,
